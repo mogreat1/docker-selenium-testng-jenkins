@@ -1,0 +1,900 @@
+Attaching to selenium-hub, practicedocker_edge_1, practicedocker_firefox_1, practicedocker_chrome_1
+[33medge_1          |[0m 2022-06-03 11:52:04,438 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+[33medge_1          |[0m 2022-06-03 11:52:04,440 INFO supervisord started with pid 9
+[32mfirefox_1       |[0m 2022-06-03 11:52:04,709 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+[32mfirefox_1       |[0m 2022-06-03 11:52:04,714 INFO supervisord started with pid 9
+[35mselenium-hub    |[0m 2022-06-03 11:52:02,129 INFO Included extra file "/etc/supervisor/conf.d/selenium-grid-hub.conf" during parsing
+[35mselenium-hub    |[0m 2022-06-03 11:52:02,135 INFO supervisord started with pid 8
+[35mselenium-hub    |[0m 2022-06-03 11:52:03,136 INFO spawned: 'selenium-grid-hub' with pid 10
+[35mselenium-hub    |[0m 11:52:03.580 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+[35mselenium-hub    |[0m 2022-06-03 11:52:03,584 INFO success: selenium-grid-hub entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[35mselenium-hub    |[0m 11:52:03.587 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+[35mselenium-hub    |[0m 11:52:03.707 INFO [BoundZmqEventBus.<init>] - XPUB binding to [binding to tcp://*:4442, advertising as tcp://172.22.0.2:4442], XSUB binding to [binding to tcp://*:4443, advertising as tcp://172.22.0.2:4443]
+[35mselenium-hub    |[0m 11:52:03.768 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://172.22.0.2:4442 and tcp://172.22.0.2:4443
+[35mselenium-hub    |[0m 11:52:03.796 INFO [UnboundZmqEventBus.<init>] - Sockets created
+[35mselenium-hub    |[0m 11:52:04.799 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+[36mchrome_1        |[0m 2022-06-03 11:52:04,985 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+[36mchrome_1        |[0m 2022-06-03 11:52:04,989 INFO supervisord started with pid 8
+[33medge_1          |[0m 2022-06-03 11:52:05,443 INFO spawned: 'xvfb' with pid 11
+[33medge_1          |[0m 2022-06-03 11:52:05,445 INFO spawned: 'vnc' with pid 12
+[33medge_1          |[0m 2022-06-03 11:52:05,448 INFO spawned: 'novnc' with pid 13
+[33medge_1          |[0m 2022-06-03 11:52:05,451 INFO spawned: 'selenium-node' with pid 14
+[33medge_1          |[0m 2022-06-03 11:52:05,473 INFO success: xvfb entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[33medge_1          |[0m 2022-06-03 11:52:05,473 INFO success: vnc entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[33medge_1          |[0m 2022-06-03 11:52:05,473 INFO success: novnc entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[33medge_1          |[0m 2022-06-03 11:52:05,473 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[35mselenium-hub    |[0m 11:52:05.712 INFO [Hub.execute] - Started Selenium Hub 4.2.0 (revision 86eb611648): http://172.22.0.2:4444
+[32mfirefox_1       |[0m 2022-06-03 11:52:05,717 INFO spawned: 'xvfb' with pid 11
+[32mfirefox_1       |[0m 2022-06-03 11:52:05,719 INFO spawned: 'vnc' with pid 12
+[32mfirefox_1       |[0m 2022-06-03 11:52:05,722 INFO spawned: 'novnc' with pid 13
+[32mfirefox_1       |[0m 2022-06-03 11:52:05,725 INFO spawned: 'selenium-node' with pid 14
+[32mfirefox_1       |[0m 2022-06-03 11:52:05,767 INFO success: xvfb entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[32mfirefox_1       |[0m 2022-06-03 11:52:05,768 INFO success: vnc entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[32mfirefox_1       |[0m 2022-06-03 11:52:05,768 INFO success: novnc entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[32mfirefox_1       |[0m 2022-06-03 11:52:05,768 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[33medge_1          |[0m Generating Selenium Config
+[33medge_1          |[0m Configuring server...
+[33medge_1          |[0m Setting up SE_NODE_HOST...
+[33medge_1          |[0m Setting up SE_NODE_PORT...
+[33medge_1          |[0m Setting up SE_NODE_GRID_URL...
+[33medge_1          |[0m Selenium Grid Node configuration: 
+[33medge_1          |[0m [events]
+[33medge_1          |[0m publish = "tcp://selenium-hub:4442"
+[33medge_1          |[0m subscribe = "tcp://selenium-hub:4443"
+[33medge_1          |[0m 
+[33medge_1          |[0m [node]
+[33medge_1          |[0m session-timeout = "300"
+[33medge_1          |[0m override-max-sessions = false
+[33medge_1          |[0m detect-drivers = false
+[33medge_1          |[0m drain-after-session-count = 0
+[33medge_1          |[0m max-sessions = 1
+[33medge_1          |[0m 
+[33medge_1          |[0m [[node.driver-configuration]]
+[33medge_1          |[0m display-name = "MicrosoftEdge"
+[33medge_1          |[0m stereotype = '{"browserName": "MicrosoftEdge", "browserVersion": "101.0", "platformName": "Linux"}'
+[33medge_1          |[0m max-sessions = 1
+[33medge_1          |[0m 
+[33medge_1          |[0m Starting Selenium Grid Node...
+[36mchrome_1        |[0m 2022-06-03 11:52:05,992 INFO spawned: 'xvfb' with pid 10
+[36mchrome_1        |[0m 2022-06-03 11:52:05,994 INFO spawned: 'vnc' with pid 11
+[36mchrome_1        |[0m 2022-06-03 11:52:06,001 INFO spawned: 'novnc' with pid 12
+[36mchrome_1        |[0m 2022-06-03 11:52:06,005 INFO spawned: 'selenium-node' with pid 14
+[36mchrome_1        |[0m 2022-06-03 11:52:06,021 INFO success: xvfb entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[36mchrome_1        |[0m 2022-06-03 11:52:06,021 INFO success: vnc entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[36mchrome_1        |[0m 2022-06-03 11:52:06,021 INFO success: novnc entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[36mchrome_1        |[0m 2022-06-03 11:52:06,021 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[32mfirefox_1       |[0m Generating Selenium Config
+[32mfirefox_1       |[0m Configuring server...
+[32mfirefox_1       |[0m Setting up SE_NODE_HOST...
+[32mfirefox_1       |[0m Setting up SE_NODE_PORT...
+[32mfirefox_1       |[0m Setting up SE_NODE_GRID_URL...
+[32mfirefox_1       |[0m Selenium Grid Node configuration: 
+[32mfirefox_1       |[0m [events]
+[32mfirefox_1       |[0m publish = "tcp://selenium-hub:4442"
+[32mfirefox_1       |[0m subscribe = "tcp://selenium-hub:4443"
+[32mfirefox_1       |[0m 
+[32mfirefox_1       |[0m [node]
+[32mfirefox_1       |[0m session-timeout = "300"
+[32mfirefox_1       |[0m override-max-sessions = false
+[32mfirefox_1       |[0m detect-drivers = false
+[32mfirefox_1       |[0m drain-after-session-count = 0
+[32mfirefox_1       |[0m max-sessions = 1
+[32mfirefox_1       |[0m 
+[32mfirefox_1       |[0m [[node.driver-configuration]]
+[32mfirefox_1       |[0m display-name = "firefox"
+[32mfirefox_1       |[0m stereotype = '{"browserName": "firefox", "browserVersion": "100.0", "platformName": "Linux"}'
+[32mfirefox_1       |[0m max-sessions = 1
+[32mfirefox_1       |[0m 
+[32mfirefox_1       |[0m Starting Selenium Grid Node...
+[36mchrome_1        |[0m Generating Selenium Config
+[36mchrome_1        |[0m Configuring server...
+[36mchrome_1        |[0m Setting up SE_NODE_HOST...
+[36mchrome_1        |[0m Setting up SE_NODE_PORT...
+[36mchrome_1        |[0m Setting up SE_NODE_GRID_URL...
+[36mchrome_1        |[0m Selenium Grid Node configuration: 
+[36mchrome_1        |[0m [events]
+[36mchrome_1        |[0m publish = "tcp://selenium-hub:4442"
+[36mchrome_1        |[0m subscribe = "tcp://selenium-hub:4443"
+[36mchrome_1        |[0m 
+[36mchrome_1        |[0m [node]
+[36mchrome_1        |[0m session-timeout = "300"
+[36mchrome_1        |[0m override-max-sessions = false
+[36mchrome_1        |[0m detect-drivers = false
+[36mchrome_1        |[0m drain-after-session-count = 0
+[36mchrome_1        |[0m max-sessions = 1
+[36mchrome_1        |[0m 
+[36mchrome_1        |[0m [[node.driver-configuration]]
+[36mchrome_1        |[0m display-name = "chrome"
+[36mchrome_1        |[0m stereotype = '{"browserName": "chrome", "browserVersion": "102.0", "platformName": "Linux"}'
+[36mchrome_1        |[0m max-sessions = 1
+[36mchrome_1        |[0m 
+[36mchrome_1        |[0m Starting Selenium Grid Node...
+[33medge_1          |[0m 11:52:06.655 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+[33medge_1          |[0m 11:52:06.667 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+[33medge_1          |[0m 11:52:06.936 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://selenium-hub:4442 and tcp://selenium-hub:4443
+[32mfirefox_1       |[0m 11:52:07.013 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+[32mfirefox_1       |[0m 11:52:07.020 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+[33medge_1          |[0m 11:52:07.039 INFO [UnboundZmqEventBus.<init>] - Sockets created
+[32mfirefox_1       |[0m 11:52:07.226 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://selenium-hub:4442 and tcp://selenium-hub:4443
+[36mchrome_1        |[0m 11:52:07.306 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+[36mchrome_1        |[0m 11:52:07.320 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+[32mfirefox_1       |[0m 11:52:07.332 INFO [UnboundZmqEventBus.<init>] - Sockets created
+[36mchrome_1        |[0m 11:52:07.521 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://selenium-hub:4442 and tcp://selenium-hub:4443
+[36mchrome_1        |[0m 11:52:07.600 INFO [UnboundZmqEventBus.<init>] - Sockets created
+[33medge_1          |[0m 11:52:08.044 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+[33medge_1          |[0m 11:52:08.196 INFO [NodeServer.createHandlers] - Reporting self as: http://172.22.0.3:5555
+[33medge_1          |[0m 11:52:08.218 INFO [NodeOptions.getSessionFactories] - Detected 8 available processors
+[33medge_1          |[0m 11:52:08.281 INFO [NodeOptions.report] - Adding MicrosoftEdge for {"browserVersion": "101.0","se:noVncPort": 7900,"browserName": "MicrosoftEdge","platformName": "Linux","se:vncEnabled": true} 1 times
+[33medge_1          |[0m 11:52:08.291 INFO [Node.<init>] - Binding additional locator mechanisms: relative, id, name
+[32mfirefox_1       |[0m 11:52:08.335 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+[33medge_1          |[0m 11:52:08.534 INFO [NodeServer$1.start] - Starting registration process for Node http://172.22.0.3:5555
+[33medge_1          |[0m 11:52:08.535 INFO [NodeServer.execute] - Started Selenium node 4.2.0 (revision 86eb611648): http://172.22.0.3:5555
+[32mfirefox_1       |[0m 11:52:08.539 INFO [NodeServer.createHandlers] - Reporting self as: http://172.22.0.4:5555
+[33medge_1          |[0m 11:52:08.552 INFO [NodeServer$1.lambda$start$1] - Sending registration event...
+[32mfirefox_1       |[0m 11:52:08.571 INFO [NodeOptions.getSessionFactories] - Detected 8 available processors
+[36mchrome_1        |[0m 11:52:08.602 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+[35mselenium-hub    |[0m 11:52:08.619 INFO [Node.<init>] - Binding additional locator mechanisms: id, name, relative
+[32mfirefox_1       |[0m 11:52:08.672 INFO [NodeOptions.report] - Adding firefox for {"browserVersion": "100.0","se:noVncPort": 7900,"browserName": "firefox","platformName": "Linux","se:vncEnabled": true} 1 times
+[32mfirefox_1       |[0m 11:52:08.691 INFO [Node.<init>] - Binding additional locator mechanisms: id, relative, name
+[36mchrome_1        |[0m 11:52:08.972 INFO [NodeServer.createHandlers] - Reporting self as: http://172.22.0.5:5555
+[36mchrome_1        |[0m 11:52:09.017 INFO [NodeOptions.getSessionFactories] - Detected 8 available processors
+[32mfirefox_1       |[0m 11:52:09.041 INFO [NodeServer$1.start] - Starting registration process for Node http://172.22.0.4:5555
+[32mfirefox_1       |[0m 11:52:09.045 INFO [NodeServer.execute] - Started Selenium node 4.2.0 (revision 86eb611648): http://172.22.0.4:5555
+[32mfirefox_1       |[0m 11:52:09.066 INFO [NodeServer$1.lambda$start$1] - Sending registration event...
+[36mchrome_1        |[0m 11:52:09.110 INFO [NodeOptions.report] - Adding chrome for {"browserVersion": "102.0","se:noVncPort": 7900,"browserName": "chrome","platformName": "Linux","se:vncEnabled": true} 1 times
+[36mchrome_1        |[0m 11:52:09.128 INFO [Node.<init>] - Binding additional locator mechanisms: id, relative, name
+[35mselenium-hub    |[0m 11:52:09.321 INFO [GridModel.setAvailability] - Switching Node 53337bf3-3e57-44a8-90c9-6532f51700ce (uri: http://172.22.0.3:5555) from DOWN to UP
+[35mselenium-hub    |[0m 11:52:09.322 INFO [LocalDistributor.add] - Added node 53337bf3-3e57-44a8-90c9-6532f51700ce at http://172.22.0.3:5555. Health check every 120s
+[33medge_1          |[0m 11:52:09.336 INFO [NodeServer.lambda$createHandlers$2] - Node has been added
+[35mselenium-hub    |[0m 11:52:09.327 INFO [Node.<init>] - Binding additional locator mechanisms: name, id, relative
+[36mchrome_1        |[0m 11:52:09.400 INFO [NodeServer$1.start] - Starting registration process for Node http://172.22.0.5:5555
+[36mchrome_1        |[0m 11:52:09.401 INFO [NodeServer.execute] - Started Selenium node 4.2.0 (revision 86eb611648): http://172.22.0.5:5555
+[36mchrome_1        |[0m 11:52:09.420 INFO [NodeServer$1.lambda$start$1] - Sending registration event...
+[35mselenium-hub    |[0m 11:52:09.597 INFO [GridModel.setAvailability] - Switching Node a917f95f-d0e1-462d-b081-f6ce28b8812f (uri: http://172.22.0.4:5555) from DOWN to UP
+[35mselenium-hub    |[0m 11:52:09.598 INFO [LocalDistributor.add] - Added node a917f95f-d0e1-462d-b081-f6ce28b8812f at http://172.22.0.4:5555. Health check every 120s
+[35mselenium-hub    |[0m 11:52:09.600 INFO [Node.<init>] - Binding additional locator mechanisms: id, name, relative
+[32mfirefox_1       |[0m 11:52:09.603 INFO [NodeServer.lambda$createHandlers$2] - Node has been added
+[35mselenium-hub    |[0m 11:52:09.882 INFO [GridModel.setAvailability] - Switching Node acdb72bd-29f7-422f-bad9-908e02383c1a (uri: http://172.22.0.5:5555) from DOWN to UP
+[35mselenium-hub    |[0m 11:52:09.882 INFO [LocalDistributor.add] - Added node acdb72bd-29f7-422f-bad9-908e02383c1a at http://172.22.0.5:5555. Health check every 120s
+[36mchrome_1        |[0m 11:52:09.886 INFO [NodeServer.lambda$createHandlers$2] - Node has been added
+[34mchrome_4        |[0m 2022-06-03 11:52:14,709 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+[34mchrome_4        |[0m 2022-06-03 11:52:14,717 INFO supervisord started with pid 9
+[36;1mchrome_5        |[0m 2022-06-03 11:52:14,882 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+[36;1mchrome_5        |[0m 2022-06-03 11:52:14,885 INFO supervisord started with pid 9
+[33;1mchrome_3        |[0m 2022-06-03 11:52:14,926 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+[33;1mchrome_3        |[0m 2022-06-03 11:52:14,929 INFO supervisord started with pid 9
+[32;1mchrome_2        |[0m 2022-06-03 11:52:14,930 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+[32;1mchrome_2        |[0m 2022-06-03 11:52:14,932 INFO supervisord started with pid 9
+[34mchrome_4        |[0m 2022-06-03 11:52:15,721 INFO spawned: 'xvfb' with pid 11
+[34mchrome_4        |[0m 2022-06-03 11:52:15,723 INFO spawned: 'vnc' with pid 12
+[34mchrome_4        |[0m 2022-06-03 11:52:15,727 INFO spawned: 'novnc' with pid 13
+[34mchrome_4        |[0m 2022-06-03 11:52:15,731 INFO spawned: 'selenium-node' with pid 15
+[34mchrome_4        |[0m 2022-06-03 11:52:15,748 INFO success: xvfb entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[34mchrome_4        |[0m 2022-06-03 11:52:15,748 INFO success: vnc entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[34mchrome_4        |[0m 2022-06-03 11:52:15,748 INFO success: novnc entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[34mchrome_4        |[0m 2022-06-03 11:52:15,748 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[36;1mchrome_5        |[0m 2022-06-03 11:52:15,888 INFO spawned: 'xvfb' with pid 11
+[36;1mchrome_5        |[0m 2022-06-03 11:52:15,890 INFO spawned: 'vnc' with pid 12
+[36;1mchrome_5        |[0m 2022-06-03 11:52:15,893 INFO spawned: 'novnc' with pid 13
+[36;1mchrome_5        |[0m 2022-06-03 11:52:15,896 INFO spawned: 'selenium-node' with pid 14
+[36;1mchrome_5        |[0m 2022-06-03 11:52:15,914 INFO success: xvfb entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[36;1mchrome_5        |[0m 2022-06-03 11:52:15,914 INFO success: vnc entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[36;1mchrome_5        |[0m 2022-06-03 11:52:15,914 INFO success: novnc entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[36;1mchrome_5        |[0m 2022-06-03 11:52:15,914 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[33;1mchrome_3        |[0m 2022-06-03 11:52:15,931 INFO spawned: 'xvfb' with pid 11
+[33;1mchrome_3        |[0m 2022-06-03 11:52:15,934 INFO spawned: 'vnc' with pid 12
+[32;1mchrome_2        |[0m 2022-06-03 11:52:15,936 INFO spawned: 'xvfb' with pid 11
+[33;1mchrome_3        |[0m 2022-06-03 11:52:15,936 INFO spawned: 'novnc' with pid 13
+[33;1mchrome_3        |[0m 2022-06-03 11:52:15,940 INFO spawned: 'selenium-node' with pid 15
+[32;1mchrome_2        |[0m 2022-06-03 11:52:15,941 INFO spawned: 'vnc' with pid 12
+[32;1mchrome_2        |[0m 2022-06-03 11:52:15,944 INFO spawned: 'novnc' with pid 14
+[32;1mchrome_2        |[0m 2022-06-03 11:52:15,947 INFO spawned: 'selenium-node' with pid 15
+[33;1mchrome_3        |[0m 2022-06-03 11:52:15,967 INFO success: xvfb entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[33;1mchrome_3        |[0m 2022-06-03 11:52:15,968 INFO success: vnc entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[33;1mchrome_3        |[0m 2022-06-03 11:52:15,968 INFO success: novnc entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[33;1mchrome_3        |[0m 2022-06-03 11:52:15,968 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[32;1mchrome_2        |[0m 2022-06-03 11:52:15,968 INFO success: xvfb entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[32;1mchrome_2        |[0m 2022-06-03 11:52:15,968 INFO success: vnc entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[32;1mchrome_2        |[0m 2022-06-03 11:52:15,968 INFO success: novnc entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[32;1mchrome_2        |[0m 2022-06-03 11:52:15,968 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[34mchrome_4        |[0m Generating Selenium Config
+[34mchrome_4        |[0m Configuring server...
+[34mchrome_4        |[0m Setting up SE_NODE_HOST...
+[34mchrome_4        |[0m Setting up SE_NODE_PORT...
+[34mchrome_4        |[0m Setting up SE_NODE_GRID_URL...
+[34mchrome_4        |[0m Selenium Grid Node configuration: 
+[34mchrome_4        |[0m [events]
+[34mchrome_4        |[0m publish = "tcp://selenium-hub:4442"
+[34mchrome_4        |[0m subscribe = "tcp://selenium-hub:4443"
+[34mchrome_4        |[0m 
+[34mchrome_4        |[0m [node]
+[34mchrome_4        |[0m session-timeout = "300"
+[34mchrome_4        |[0m override-max-sessions = false
+[34mchrome_4        |[0m detect-drivers = false
+[34mchrome_4        |[0m drain-after-session-count = 0
+[34mchrome_4        |[0m max-sessions = 1
+[34mchrome_4        |[0m 
+[34mchrome_4        |[0m [[node.driver-configuration]]
+[34mchrome_4        |[0m display-name = "chrome"
+[34mchrome_4        |[0m stereotype = '{"browserName": "chrome", "browserVersion": "102.0", "platformName": "Linux"}'
+[34mchrome_4        |[0m max-sessions = 1
+[34mchrome_4        |[0m 
+[34mchrome_4        |[0m Starting Selenium Grid Node...
+[36;1mchrome_5        |[0m Generating Selenium Config
+[36;1mchrome_5        |[0m Configuring server...
+[36;1mchrome_5        |[0m Setting up SE_NODE_HOST...
+[36;1mchrome_5        |[0m Setting up SE_NODE_PORT...
+[36;1mchrome_5        |[0m Setting up SE_NODE_GRID_URL...
+[36;1mchrome_5        |[0m Selenium Grid Node configuration: 
+[36;1mchrome_5        |[0m [events]
+[36;1mchrome_5        |[0m publish = "tcp://selenium-hub:4442"
+[36;1mchrome_5        |[0m subscribe = "tcp://selenium-hub:4443"
+[36;1mchrome_5        |[0m 
+[36;1mchrome_5        |[0m [node]
+[36;1mchrome_5        |[0m session-timeout = "300"
+[36;1mchrome_5        |[0m override-max-sessions = false
+[36;1mchrome_5        |[0m detect-drivers = false
+[36;1mchrome_5        |[0m drain-after-session-count = 0
+[36;1mchrome_5        |[0m max-sessions = 1
+[36;1mchrome_5        |[0m 
+[36;1mchrome_5        |[0m [[node.driver-configuration]]
+[36;1mchrome_5        |[0m display-name = "chrome"
+[36;1mchrome_5        |[0m stereotype = '{"browserName": "chrome", "browserVersion": "102.0", "platformName": "Linux"}'
+[36;1mchrome_5        |[0m max-sessions = 1
+[36;1mchrome_5        |[0m 
+[36;1mchrome_5        |[0m Starting Selenium Grid Node...
+[32;1mchrome_2        |[0m Generating Selenium Config
+[32;1mchrome_2        |[0m Configuring server...
+[32;1mchrome_2        |[0m Setting up SE_NODE_HOST...
+[32;1mchrome_2        |[0m Setting up SE_NODE_PORT...
+[32;1mchrome_2        |[0m Setting up SE_NODE_GRID_URL...
+[33;1mchrome_3        |[0m Generating Selenium Config
+[33;1mchrome_3        |[0m Configuring server...
+[33;1mchrome_3        |[0m Setting up SE_NODE_HOST...
+[33;1mchrome_3        |[0m Setting up SE_NODE_PORT...
+[33;1mchrome_3        |[0m Setting up SE_NODE_GRID_URL...
+[32;1mchrome_2        |[0m Selenium Grid Node configuration: 
+[32;1mchrome_2        |[0m [events]
+[32;1mchrome_2        |[0m publish = "tcp://selenium-hub:4442"
+[32;1mchrome_2        |[0m subscribe = "tcp://selenium-hub:4443"
+[32;1mchrome_2        |[0m 
+[32;1mchrome_2        |[0m [node]
+[32;1mchrome_2        |[0m session-timeout = "300"
+[32;1mchrome_2        |[0m override-max-sessions = false
+[32;1mchrome_2        |[0m detect-drivers = false
+[32;1mchrome_2        |[0m drain-after-session-count = 0
+[32;1mchrome_2        |[0m max-sessions = 1
+[32;1mchrome_2        |[0m 
+[32;1mchrome_2        |[0m [[node.driver-configuration]]
+[32;1mchrome_2        |[0m display-name = "chrome"
+[32;1mchrome_2        |[0m stereotype = '{"browserName": "chrome", "browserVersion": "102.0", "platformName": "Linux"}'
+[32;1mchrome_2        |[0m max-sessions = 1
+[32;1mchrome_2        |[0m 
+[32;1mchrome_2        |[0m Starting Selenium Grid Node...
+[33;1mchrome_3        |[0m Selenium Grid Node configuration: 
+[33;1mchrome_3        |[0m [events]
+[33;1mchrome_3        |[0m publish = "tcp://selenium-hub:4442"
+[33;1mchrome_3        |[0m subscribe = "tcp://selenium-hub:4443"
+[33;1mchrome_3        |[0m 
+[33;1mchrome_3        |[0m [node]
+[33;1mchrome_3        |[0m session-timeout = "300"
+[33;1mchrome_3        |[0m override-max-sessions = false
+[33;1mchrome_3        |[0m detect-drivers = false
+[33;1mchrome_3        |[0m drain-after-session-count = 0
+[33;1mchrome_3        |[0m max-sessions = 1
+[33;1mchrome_3        |[0m 
+[33;1mchrome_3        |[0m [[node.driver-configuration]]
+[33;1mchrome_3        |[0m display-name = "chrome"
+[33;1mchrome_3        |[0m stereotype = '{"browserName": "chrome", "browserVersion": "102.0", "platformName": "Linux"}'
+[33;1mchrome_3        |[0m max-sessions = 1
+[33;1mchrome_3        |[0m 
+[33;1mchrome_3        |[0m Starting Selenium Grid Node...
+[34mchrome_4        |[0m 11:52:16.896 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+[34mchrome_4        |[0m 11:52:16.904 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+[34mchrome_4        |[0m 11:52:17.157 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://selenium-hub:4442 and tcp://selenium-hub:4443
+[36;1mchrome_5        |[0m 11:52:17.199 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+[36;1mchrome_5        |[0m 11:52:17.209 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+[32;1mchrome_2        |[0m 11:52:17.241 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+[32;1mchrome_2        |[0m 11:52:17.249 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+[33;1mchrome_3        |[0m 11:52:17.251 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+[33;1mchrome_3        |[0m 11:52:17.262 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+[34mchrome_4        |[0m 11:52:17.370 INFO [UnboundZmqEventBus.<init>] - Sockets created
+[36;1mchrome_5        |[0m 11:52:17.487 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://selenium-hub:4442 and tcp://selenium-hub:4443
+[33;1mchrome_3        |[0m 11:52:17.516 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://selenium-hub:4442 and tcp://selenium-hub:4443
+[32;1mchrome_2        |[0m 11:52:17.526 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://selenium-hub:4442 and tcp://selenium-hub:4443
+[36;1mchrome_5        |[0m 11:52:17.602 INFO [UnboundZmqEventBus.<init>] - Sockets created
+[32;1mchrome_2        |[0m 11:52:17.631 INFO [UnboundZmqEventBus.<init>] - Sockets created
+[33;1mchrome_3        |[0m 11:52:17.646 INFO [UnboundZmqEventBus.<init>] - Sockets created
+[34mchrome_4        |[0m 11:52:18.404 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+[34mchrome_4        |[0m 11:52:18.577 INFO [NodeServer.createHandlers] - Reporting self as: http://172.22.0.6:5555
+[36;1mchrome_5        |[0m 11:52:18.610 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+[34mchrome_4        |[0m 11:52:18.618 INFO [NodeOptions.getSessionFactories] - Detected 8 available processors
+[32;1mchrome_2        |[0m 11:52:18.633 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+[33;1mchrome_3        |[0m 11:52:18.655 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+[34mchrome_4        |[0m 11:52:18.727 INFO [NodeOptions.report] - Adding chrome for {"browserVersion": "102.0","se:noVncPort": 7900,"browserName": "chrome","platformName": "Linux","se:vncEnabled": true} 1 times
+[34mchrome_4        |[0m 11:52:18.748 INFO [Node.<init>] - Binding additional locator mechanisms: relative, id, name
+[33;1mchrome_3        |[0m 11:52:18.951 INFO [NodeServer.createHandlers] - Reporting self as: http://172.22.0.8:5555
+[36;1mchrome_5        |[0m 11:52:18.968 INFO [NodeServer.createHandlers] - Reporting self as: http://172.22.0.9:5555
+[33;1mchrome_3        |[0m 11:52:19.003 INFO [NodeOptions.getSessionFactories] - Detected 8 available processors
+[32;1mchrome_2        |[0m 11:52:19.012 INFO [NodeServer.createHandlers] - Reporting self as: http://172.22.0.7:5555
+[36;1mchrome_5        |[0m 11:52:19.022 INFO [NodeOptions.getSessionFactories] - Detected 8 available processors
+[32;1mchrome_2        |[0m 11:52:19.049 INFO [NodeOptions.getSessionFactories] - Detected 8 available processors
+[36;1mchrome_5        |[0m 11:52:19.109 INFO [NodeOptions.report] - Adding chrome for {"browserVersion": "102.0","se:noVncPort": 7900,"browserName": "chrome","platformName": "Linux","se:vncEnabled": true} 1 times
+[36;1mchrome_5        |[0m 11:52:19.131 INFO [Node.<init>] - Binding additional locator mechanisms: id, relative, name
+[33;1mchrome_3        |[0m 11:52:19.141 INFO [NodeOptions.report] - Adding chrome for {"browserVersion": "102.0","se:noVncPort": 7900,"browserName": "chrome","platformName": "Linux","se:vncEnabled": true} 1 times
+[33;1mchrome_3        |[0m 11:52:19.171 INFO [Node.<init>] - Binding additional locator mechanisms: id, relative, name
+[34mchrome_4        |[0m 11:52:19.192 INFO [NodeServer$1.start] - Starting registration process for Node http://172.22.0.6:5555
+[34mchrome_4        |[0m 11:52:19.197 INFO [NodeServer.execute] - Started Selenium node 4.2.0 (revision 86eb611648): http://172.22.0.6:5555
+[32;1mchrome_2        |[0m 11:52:19.213 INFO [NodeOptions.report] - Adding chrome for {"browserVersion": "102.0","se:noVncPort": 7900,"browserName": "chrome","platformName": "Linux","se:vncEnabled": true} 1 times
+[32;1mchrome_2        |[0m 11:52:19.236 INFO [Node.<init>] - Binding additional locator mechanisms: relative, id, name
+[35mselenium-hub    |[0m 11:52:19.331 INFO [Node.<init>] - Binding additional locator mechanisms: relative, id, name
+[34mchrome_4        |[0m 11:52:19.267 INFO [NodeServer$1.lambda$start$1] - Sending registration event...
+[32;1mchrome_2        |[0m 11:52:19.938 INFO [NodeServer$1.start] - Starting registration process for Node http://172.22.0.7:5555
+[32;1mchrome_2        |[0m 11:52:19.952 INFO [NodeServer.execute] - Started Selenium node 4.2.0 (revision 86eb611648): http://172.22.0.7:5555
+[36;1mchrome_5        |[0m 11:52:20.001 INFO [NodeServer$1.start] - Starting registration process for Node http://172.22.0.9:5555
+[36;1mchrome_5        |[0m 11:52:20.034 INFO [NodeServer.execute] - Started Selenium node 4.2.0 (revision 86eb611648): http://172.22.0.9:5555
+[35mselenium-hub    |[0m 11:52:20.064 INFO [GridModel.setAvailability] - Switching Node 4a29d457-1762-411f-a382-19c4db32b4c9 (uri: http://172.22.0.6:5555) from DOWN to UP
+[35mselenium-hub    |[0m 11:52:20.065 INFO [LocalDistributor.add] - Added node 4a29d457-1762-411f-a382-19c4db32b4c9 at http://172.22.0.6:5555. Health check every 120s
+[32;1mchrome_2        |[0m 11:52:20.036 INFO [NodeServer$1.lambda$start$1] - Sending registration event...
+[35mselenium-hub    |[0m 11:52:20.123 INFO [Node.<init>] - Binding additional locator mechanisms: name, id, relative
+[34mchrome_4        |[0m 11:52:20.132 INFO [NodeServer.lambda$createHandlers$2] - Node has been added
+[36;1mchrome_5        |[0m 11:52:20.133 INFO [NodeServer$1.lambda$start$1] - Sending registration event...
+[33;1mchrome_3        |[0m 11:52:20.294 INFO [NodeServer$1.start] - Starting registration process for Node http://172.22.0.8:5555
+[33;1mchrome_3        |[0m 11:52:20.296 INFO [NodeServer.execute] - Started Selenium node 4.2.0 (revision 86eb611648): http://172.22.0.8:5555
+[33;1mchrome_3        |[0m 11:52:20.347 INFO [NodeServer$1.lambda$start$1] - Sending registration event...
+[35mselenium-hub    |[0m 11:52:20.559 INFO [GridModel.setAvailability] - Switching Node dad844d5-b8b8-45fa-8bc6-6e6ac8b4e5f4 (uri: http://172.22.0.7:5555) from DOWN to UP
+[35mselenium-hub    |[0m 11:52:20.559 INFO [LocalDistributor.add] - Added node dad844d5-b8b8-45fa-8bc6-6e6ac8b4e5f4 at http://172.22.0.7:5555. Health check every 120s
+[35mselenium-hub    |[0m 11:52:20.562 INFO [Node.<init>] - Binding additional locator mechanisms: name, id, relative
+[32;1mchrome_2        |[0m 11:52:20.566 INFO [NodeServer.lambda$createHandlers$2] - Node has been added
+[35mselenium-hub    |[0m 11:52:20.799 INFO [GridModel.setAvailability] - Switching Node 08a1c241-1688-42a8-b30b-74e833e3ac43 (uri: http://172.22.0.9:5555) from DOWN to UP
+[36;1mchrome_5        |[0m 11:52:20.805 INFO [NodeServer.lambda$createHandlers$2] - Node has been added
+[35mselenium-hub    |[0m 11:52:20.799 INFO [LocalDistributor.add] - Added node 08a1c241-1688-42a8-b30b-74e833e3ac43 at http://172.22.0.9:5555. Health check every 120s
+[35mselenium-hub    |[0m 11:52:20.801 INFO [Node.<init>] - Binding additional locator mechanisms: name, id, relative
+[35mselenium-hub    |[0m 11:52:21.096 INFO [GridModel.setAvailability] - Switching Node 10bdc9cc-0dd6-41f7-829e-4c5ddf7f1ca6 (uri: http://172.22.0.8:5555) from DOWN to UP
+[35mselenium-hub    |[0m 11:52:21.096 INFO [LocalDistributor.add] - Added node 10bdc9cc-0dd6-41f7-829e-4c5ddf7f1ca6 at http://172.22.0.8:5555. Health check every 120s
+[33;1mchrome_3        |[0m 11:52:21.103 INFO [NodeServer.lambda$createHandlers$2] - Node has been added
+[35mselenium-hub    |[0m 11:52:21.959 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
+[35mselenium-hub    |[0m  [Capabilities {browserName: chrome}]
+[35mselenium-hub    |[0m 11:52:21.959 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
+[35mselenium-hub    |[0m  [Capabilities {browserName: chrome}]
+[35mselenium-hub    |[0m 11:52:21.959 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
+[35mselenium-hub    |[0m  [Capabilities {browserName: chrome}]
+[35mselenium-hub    |[0m 11:52:21.959 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
+[35mselenium-hub    |[0m  [Capabilities {browserName: chrome}]
+[35mselenium-hub    |[0m 11:52:21.960 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
+[35mselenium-hub    |[0m  [Capabilities {browserName: chrome}]
+[36;1mchrome_5        |[0m Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 32798
+[36;1mchrome_5        |[0m Only local connections are allowed.
+[36;1mchrome_5        |[0m Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[36;1mchrome_5        |[0m ChromeDriver was started successfully.
+[36;1mchrome_5        |[0m [1654257142.117][SEVERE]: bind() failed: Cannot assign requested address (99)
+[34mchrome_4        |[0m Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 34031
+[34mchrome_4        |[0m Only local connections are allowed.
+[34mchrome_4        |[0m Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[34mchrome_4        |[0m ChromeDriver was started successfully.
+[34mchrome_4        |[0m [1654257142.123][SEVERE]: bind() failed: Cannot assign requested address (99)
+[36mchrome_1        |[0m Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 58144
+[36mchrome_1        |[0m Only local connections are allowed.
+[36mchrome_1        |[0m Please see https://chromedriver.chromium.org/security-considerat[1654257142.142][SEVERE]: bind() failed: Cannot assign requested address (99)
+[36mchrome_1        |[0m ions for suggestions on keeping ChromeDriver safe.
+[36mchrome_1        |[0m ChromeDriver was started successfully.
+[32;1mchrome_2        |[0m Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 42677
+[32;1mchrome_2        |[0m Only local connec[ti16o5n4s2 5a7r1e4 2a.l1l2o7w]e[dS.E
+[32;1mchrome_2        |[0m Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[32;1mchrome_2        |[0m ChromeDriver was started successfully.
+[32;1mchrome_2        |[0m VERE]: bind() failed: Cannot assign requested address (99)
+[33;1mchrome_3        |[0m [1654257142.151][SEVERE]: bind() failed: Cannot assign requested address (99)
+[33;1mchrome_3        |[0m Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 46628
+[33;1mchrome_3        |[0m Only local connections are allowed.
+[33;1mchrome_3        |[0m Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[33;1mchrome_3        |[0m ChromeDriver was started successfully.
+[32;1mchrome_2        |[0m 11:52:24.260 INFO [ProtocolHandshake.createSession] - Detected upstream dialect: W3C
+[32;1mchrome_2        |[0m 11:52:24.284 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.287 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.305 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.320 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.327 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.327 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.330 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.331 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.336 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.336 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.338 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.339 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.349 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.346 INFO [ProtocolHandshake.createSession] - Detected upstream dialect: W3C
+[32;1mchrome_2        |[0m 11:52:24.350 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.352 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.355 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.373 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.369 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.370 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.370 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.370 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.371 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.372 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.376 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.381 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.379 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.381 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.383 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.385 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.383 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.386 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.388 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.388 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.384 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.393 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.393 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.395 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.395 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.397 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.398 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.399 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.400 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:24.401 INFO [LocalNode.newSession] - Session created by the Node. Id: e93da2a1d0acf1b7f7e7cd0edf6bfe68, Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.VKSSgX}, goog:chromeOptions: {debuggerAddress: localhost:39141}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: http://localhost:39141, se:cdpVersion: 102.0.5005.61, se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.7:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+[36mchrome_1        |[0m 11:52:24.414 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.415 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.416 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.416 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.417 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.418 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.420 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.421 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.422 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.424 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.426 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.427 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.429 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.430 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:24.432 INFO [LocalNode.newSession] - Session created by the Node. Id: d40dbb06dac92edb76ed2fefed22b7be, Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.ouuUAt}, goog:chromeOptions: {debuggerAddress: localhost:38677}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: http://localhost:38677, se:cdpVersion: 102.0.5005.61, se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+[35mselenium-hub    |[0m 11:52:24.450 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.451 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.454 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.455 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.464 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.465 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.464 INFO [ProtocolHandshake.createSession] - Detected upstream dialect: W3C
+[35mselenium-hub    |[0m 11:52:24.469 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.471 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.471 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.472 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.473 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.474 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.474 INFO [LocalDistributor.newSession] - Session created by the Distributor. Id: e93da2a1d0acf1b7f7e7cd0edf6bfe68 
+[35mselenium-hub    |[0m  Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.VKSSgX}, goog:chromeOptions: {debuggerAddress: localhost:39141}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: {}, se:cdp: ws://172.22.0.7:4444/sessio..., se:cdpVersion: 102.0.5005.61, se:vnc: ws://172.22.0.7:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.7:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+[35mselenium-hub    |[0m 11:52:24.479 INFO [LocalDistributor.newSession] - Session created by the Distributor. Id: d40dbb06dac92edb76ed2fefed22b7be 
+[35mselenium-hub    |[0m  Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.ouuUAt}, goog:chromeOptions: {debuggerAddress: localhost:38677}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: {}, se:cdp: ws://172.22.0.5:4444/sessio..., se:cdpVersion: 102.0.5005.61, se:vnc: ws://172.22.0.5:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+[36;1mchrome_5        |[0m 11:52:24.482 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.486 INFO [ProtocolHandshake.createSession] - Detected upstream dialect: W3C
+[36;1mchrome_5        |[0m 11:52:24.493 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.494 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.496 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.501 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.502 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.503 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.506 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.508 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.508 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.510 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.516 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.523 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.515 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.516 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.518 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.519 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.522 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.523 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.526 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.529 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.528 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.531 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.530 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.533 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.534 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.544 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.545 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.563 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.564 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.565 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.566 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.567 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.568 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.579 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.587 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.588 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.599 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.601 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.603 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.605 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.595 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.599 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.600 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.607 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.608 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.610 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.616 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.618 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.613 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.619 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.620 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.621 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.621 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.627 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:24.628 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:24.627 INFO [LocalNode.newSession] - Session created by the Node. Id: 716bcb2e76d3bb47cd2d29179821bd8e, Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.P351GL}, goog:chromeOptions: {debuggerAddress: localhost:37859}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: http://localhost:37859, se:cdpVersion: 102.0.5005.61, se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.9:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+[33;1mchrome_3        |[0m 11:52:24.634 INFO [LocalNode.newSession] - Session created by the Node. Id: 2a79aeee9133e32d4a40da45c4747858, Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.75QSdo}, goog:chromeOptions: {debuggerAddress: localhost:46195}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: http://localhost:46195, se:cdpVersion: 102.0.5005.61, se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.8:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+[34mchrome_4        |[0m 11:52:24.641 INFO [ProtocolHandshake.createSession] - Detected upstream dialect: W3C
+[35mselenium-hub    |[0m 11:52:24.650 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.651 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.651 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.652 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.652 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.653 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.657 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.657 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.674 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.677 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.657 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.658 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.659 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.660 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.663 INFO [LocalDistributor.newSession] - Session created by the Distributor. Id: 716bcb2e76d3bb47cd2d29179821bd8e 
+[35mselenium-hub    |[0m  Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.P351GL}, goog:chromeOptions: {debuggerAddress: localhost:37859}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: {}, se:cdp: ws://172.22.0.9:4444/sessio..., se:cdpVersion: 102.0.5005.61, se:vnc: ws://172.22.0.9:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.9:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+[35mselenium-hub    |[0m 11:52:24.665 INFO [LocalDistributor.newSession] - Session created by the Distributor. Id: 2a79aeee9133e32d4a40da45c4747858 
+[35mselenium-hub    |[0m  Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.75QSdo}, goog:chromeOptions: {debuggerAddress: localhost:46195}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: {}, se:cdp: ws://172.22.0.8:4444/sessio..., se:cdpVersion: 102.0.5005.61, se:vnc: ws://172.22.0.8:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.8:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+[34mchrome_4        |[0m 11:52:24.686 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.687 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.689 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.690 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.692 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.693 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.694 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.694 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.696 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.696 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.700 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.702 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.718 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.721 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.722 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.722 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.724 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.725 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.727 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.727 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.729 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.729 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.731 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.731 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.733 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.734 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:24.739 INFO [LocalNode.newSession] - Session created by the Node. Id: a1b98894e5a32cfe7b04ae497190c3e2, Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.Rfmoov}, goog:chromeOptions: {debuggerAddress: localhost:33547}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: http://localhost:33547, se:cdpVersion: 102.0.5005.61, se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.6:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+[35mselenium-hub    |[0m 11:52:24.793 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.793 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.793 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.794 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.795 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.798 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:24.803 INFO [LocalDistributor.newSession] - Session created by the Distributor. Id: a1b98894e5a32cfe7b04ae497190c3e2 
+[35mselenium-hub    |[0m  Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.Rfmoov}, goog:chromeOptions: {debuggerAddress: localhost:33547}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: {}, se:cdp: ws://172.22.0.6:4444/sessio..., se:cdpVersion: 102.0.5005.61, se:vnc: ws://172.22.0.6:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.6:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+[36mchrome_1        |[0m 11:52:26.223 INFO [SessionSlot.stop] - Stopping session d40dbb06dac92edb76ed2fefed22b7be
+[33;1mchrome_3        |[0m 11:52:26.224 INFO [SessionSlot.stop] - Stopping session 2a79aeee9133e32d4a40da45c4747858
+[35mselenium-hub    |[0m 11:52:26.235 INFO [GridModel.release] - Releasing slot for session id d40dbb06dac92edb76ed2fefed22b7be
+[35mselenium-hub    |[0m 11:52:26.230 INFO [LocalSessionMap.lambda$new$0] - Deleted session from local Session Map, Id: d40dbb06dac92edb76ed2fefed22b7be
+[35mselenium-hub    |[0m 11:52:26.235 INFO [LocalSessionMap.lambda$new$0] - Deleted session from local Session Map, Id: 2a79aeee9133e32d4a40da45c4747858
+[35mselenium-hub    |[0m 11:52:26.235 INFO [GridModel.release] - Releasing slot for session id 2a79aeee9133e32d4a40da45c4747858
+[36;1mchrome_5        |[0m 11:52:26.262 INFO [SessionSlot.stop] - Stopping session 716bcb2e76d3bb47cd2d29179821bd8e
+[32;1mchrome_2        |[0m 11:52:26.264 INFO [SessionSlot.stop] - Stopping session e93da2a1d0acf1b7f7e7cd0edf6bfe68
+[35mselenium-hub    |[0m 11:52:26.267 INFO [GridModel.release] - Releasing slot for session id 716bcb2e76d3bb47cd2d29179821bd8e
+[35mselenium-hub    |[0m 11:52:26.268 INFO [LocalSessionMap.lambda$new$0] - Deleted session from local Session Map, Id: 716bcb2e76d3bb47cd2d29179821bd8e
+[35mselenium-hub    |[0m 11:52:26.276 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
+[35mselenium-hub    |[0m  [Capabilities {browserName: chrome}]
+[35mselenium-hub    |[0m 11:52:26.285 INFO [LocalSessionMap.lambda$new$0] - Deleted session from local Session Map, Id: e93da2a1d0acf1b7f7e7cd0edf6bfe68
+[35mselenium-hub    |[0m 11:52:26.286 INFO [GridModel.release] - Releasing slot for session id e93da2a1d0acf1b7f7e7cd0edf6bfe68
+[35mselenium-hub    |[0m 11:52:26.289 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
+[35mselenium-hub    |[0m  [Capabilities {browserName: chrome}]
+[35mselenium-hub    |[0m 11:52:26.305 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
+[35mselenium-hub    |[0m  [Capabilities {browserName: chrome}]
+[35mselenium-hub    |[0m 11:52:26.305 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
+[35mselenium-hub    |[0m  [Capabilities {browserName: chrome}]
+[36mchrome_1        |[0m Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 42697
+[36mchrome_1        |[0m Only local connections are allowed.
+[36mchrome_1        |[0m Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[36mchrome_1        |[0m ChromeDriver was start[16ed5 4s2u5c7c1e4s6s.f3u1l5l]y[.S
+[36mchrome_1        |[0m EVERE]: bind() failed: Cannot assign requested address (99)
+[32;1mchrome_2        |[0m Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 44424
+[32;1mchrome_2        |[0m Only local connections are allowed.
+[32;1mchrome_2        |[0m Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[32;1mchrome_2        |[0m ChromeDriver was started successfully.
+[32;1mchrome_2        |[0m [1654257146.320][SEVERE]: bind() failed: Cannot assign requested address (99)
+[33;1mchrome_3        |[0m Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 46514
+[33;1mchrome_3        |[0m Only local connections are allowed.
+[33;1mchrome_3        |[0m Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[33;1mchrome_3        |[0m [1654257146.356][SEVERE]: bind() failed: Cannot assign requested address (99)
+[36;1mchrome_5        |[0m Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 45754
+[36;1mchrome_5        |[0m Only local connections are allowed.
+[36;1mchrome_5        |[0m Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[33;1mchrome_3        |[0m ChromeDriver was started successfully.
+[36;1mchrome_5        |[0m [1654257146.375][SEVERE]: bind() failed: Cannot assign requested address (99)
+[36;1mchrome_5        |[0m ChromeDriver was started successfully.
+[36;1mchrome_5        |[0m 11:52:27.158 INFO [ProtocolHandshake.createSession] - Detected upstream dialect: W3C
+[36;1mchrome_5        |[0m 11:52:27.159 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.159 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.160 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.160 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.161 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.161 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.162 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.163 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.163 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.164 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.174 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.192 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.213 INFO [ProtocolHandshake.createSession] - Detected upstream dialect: W3C
+[36;1mchrome_5        |[0m 11:52:27.214 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.215 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.214 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.215 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.224 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.225 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.230 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.231 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.247 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.248 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.250 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.253 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.255 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.256 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.262 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.263 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.265 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.266 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.268 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.269 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.258 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.270 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.272 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.277 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.277 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.278 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.279 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.280 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.281 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.283 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.283 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.286 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.287 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.272 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.288 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.289 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.290 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.292 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.291 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.294 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.295 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.297 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.300 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[32;1mchrome_2        |[0m 11:52:27.298 INFO [LocalNode.newSession] - Session created by the Node. Id: a56d591dc5aa68188e4936edf84fea89, Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.JiEPIR}, goog:chromeOptions: {debuggerAddress: localhost:40235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: http://localhost:40235, se:cdpVersion: 102.0.5005.61, se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.7:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+[36;1mchrome_5        |[0m 11:52:27.307 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36;1mchrome_5        |[0m 11:52:27.310 INFO [LocalNode.newSession] - Session created by the Node. Id: 3e66655cac133cf19df04e29c3342bd1, Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.uzpycr}, goog:chromeOptions: {debuggerAddress: localhost:38919}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: http://localhost:38919, se:cdpVersion: 102.0.5005.61, se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.9:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+[35mselenium-hub    |[0m 11:52:27.318 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:27.319 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:27.320 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:27.320 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:27.321 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:27.322 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:27.330 INFO [LocalDistributor.newSession] - Session created by the Distributor. Id: a56d591dc5aa68188e4936edf84fea89 
+[35mselenium-hub    |[0m  Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.JiEPIR}, goog:chromeOptions: {debuggerAddress: localhost:40235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: {}, se:cdp: ws://172.22.0.7:4444/sessio..., se:cdpVersion: 102.0.5005.61, se:vnc: ws://172.22.0.7:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.7:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+[35mselenium-hub    |[0m 11:52:27.373 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:27.374 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:27.377 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:27.378 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:27.379 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:27.380 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.405 INFO [ProtocolHandshake.createSession] - Detected upstream dialect: W3C
+[33;1mchrome_3        |[0m 11:52:27.411 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.412 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:27.426 INFO [LocalDistributor.newSession] - Session created by the Distributor. Id: 3e66655cac133cf19df04e29c3342bd1 
+[35mselenium-hub    |[0m  Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.uzpycr}, goog:chromeOptions: {debuggerAddress: localhost:38919}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: {}, se:cdp: ws://172.22.0.9:4444/sessio..., se:cdpVersion: 102.0.5005.61, se:vnc: ws://172.22.0.9:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.9:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+[33;1mchrome_3        |[0m 11:52:27.427 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.428 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.448 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.450 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.486 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.488 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.490 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.491 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.501 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.508 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.511 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.512 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.523 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.526 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.528 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.529 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.534 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.537 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.546 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.547 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.550 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.553 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.555 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.556 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.576 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.577 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[33;1mchrome_3        |[0m 11:52:27.579 INFO [LocalNode.newSession] - Session created by the Node. Id: aadfafd3f3eb6875b86f968ff8983270, Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.HnwBFn}, goog:chromeOptions: {debuggerAddress: localhost:39119}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: http://localhost:39119, se:cdpVersion: 102.0.5005.61, se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.8:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+[36mchrome_1        |[0m 11:52:27.585 INFO [ProtocolHandshake.createSession] - Detected upstream dialect: W3C
+[36mchrome_1        |[0m 11:52:27.590 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.592 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.594 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.597 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.606 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.608 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.612 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:27.614 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:27.614 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.614 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.616 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.616 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.619 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.620 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.621 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.621 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:27.625 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:27.625 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:27.627 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:27.627 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.625 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.626 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.626 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.627 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.627 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.628 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.629 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.629 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.632 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.633 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.635 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.636 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.637 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[36mchrome_1        |[0m 11:52:27.638 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:27.634 INFO [LocalDistributor.newSession] - Session created by the Distributor. Id: aadfafd3f3eb6875b86f968ff8983270 
+[35mselenium-hub    |[0m  Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.HnwBFn}, goog:chromeOptions: {debuggerAddress: localhost:39119}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: {}, se:cdp: ws://172.22.0.8:4444/sessio..., se:cdpVersion: 102.0.5005.61, se:vnc: ws://172.22.0.8:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.8:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+[36mchrome_1        |[0m 11:52:27.641 INFO [LocalNode.newSession] - Session created by the Node. Id: b3d4ef3012031d545ca4eec9275e10b7, Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.XPfE7r}, goog:chromeOptions: {debuggerAddress: localhost:32871}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: http://localhost:32871, se:cdpVersion: 102.0.5005.61, se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+[35mselenium-hub    |[0m 11:52:27.670 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:27.671 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:27.671 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:27.672 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:27.673 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:27.673 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:27.697 INFO [LocalDistributor.newSession] - Session created by the Distributor. Id: b3d4ef3012031d545ca4eec9275e10b7 
+[35mselenium-hub    |[0m  Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.XPfE7r}, goog:chromeOptions: {debuggerAddress: localhost:32871}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: {}, se:cdp: ws://172.22.0.5:4444/sessio..., se:cdpVersion: 102.0.5005.61, se:vnc: ws://172.22.0.5:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+[34mchrome_4        |[0m 11:52:28.621 INFO [SessionSlot.stop] - Stopping session a1b98894e5a32cfe7b04ae497190c3e2
+[35mselenium-hub    |[0m 11:52:28.624 INFO [GridModel.release] - Releasing slot for session id a1b98894e5a32cfe7b04ae497190c3e2
+[35mselenium-hub    |[0m 11:52:28.624 INFO [LocalSessionMap.lambda$new$0] - Deleted session from local Session Map, Id: a1b98894e5a32cfe7b04ae497190c3e2
+[35mselenium-hub    |[0m 11:52:28.653 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
+[35mselenium-hub    |[0m  [Capabilities {browserName: chrome}]
+[32;1mchrome_2        |[0m 11:52:28.667 INFO [SessionSlot.stop] - Stopping session a56d591dc5aa68188e4936edf84fea89
+[35mselenium-hub    |[0m 11:52:28.670 INFO [GridModel.release] - Releasing slot for session id a56d591dc5aa68188e4936edf84fea89
+[35mselenium-hub    |[0m 11:52:28.670 INFO [LocalSessionMap.lambda$new$0] - Deleted session from local Session Map, Id: a56d591dc5aa68188e4936edf84fea89
+[34mchrome_4        |[0m Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 56600
+[34mchrome_4        |[0m Only local connections are allowed.
+[34mchrome_4        |[0m Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[34mchrome_4        |[0m ChromeDriver was started successfully.
+[34mchrome_4        |[0m [1654257148.677][SEVERE]: bind() failed: Cannot assign requested address (99)
+[33;1mchrome_3        |[0m 11:52:28.938 INFO [SessionSlot.stop] - Stopping session aadfafd3f3eb6875b86f968ff8983270
+[35mselenium-hub    |[0m 11:52:28.941 INFO [LocalSessionMap.lambda$new$0] - Deleted session from local Session Map, Id: aadfafd3f3eb6875b86f968ff8983270
+[35mselenium-hub    |[0m 11:52:28.942 INFO [GridModel.release] - Releasing slot for session id aadfafd3f3eb6875b86f968ff8983270
+[36mchrome_1        |[0m 11:52:29.006 INFO [SessionSlot.stop] - Stopping session b3d4ef3012031d545ca4eec9275e10b7
+[35mselenium-hub    |[0m 11:52:29.012 INFO [LocalSessionMap.lambda$new$0] - Deleted session from local Session Map, Id: b3d4ef3012031d545ca4eec9275e10b7
+[35mselenium-hub    |[0m 11:52:29.013 INFO [GridModel.release] - Releasing slot for session id b3d4ef3012031d545ca4eec9275e10b7
+[36;1mchrome_5        |[0m 11:52:29.199 INFO [SessionSlot.stop] - Stopping session 3e66655cac133cf19df04e29c3342bd1
+[35mselenium-hub    |[0m 11:52:29.204 INFO [LocalSessionMap.lambda$new$0] - Deleted session from local Session Map, Id: 3e66655cac133cf19df04e29c3342bd1
+[35mselenium-hub    |[0m 11:52:29.204 INFO [GridModel.release] - Releasing slot for session id 3e66655cac133cf19df04e29c3342bd1
+[34mchrome_4        |[0m 11:52:29.354 INFO [ProtocolHandshake.createSession] - Detected upstream dialect: W3C
+[34mchrome_4        |[0m 11:52:29.355 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.355 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.356 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.356 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.357 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.358 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.359 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.359 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.361 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.362 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.363 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.366 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.369 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.370 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.374 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.375 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.375 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.375 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.376 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.376 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.377 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.377 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.378 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.378 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.380 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.380 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.381 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.383 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[34mchrome_4        |[0m 11:52:29.387 INFO [LocalNode.newSession] - Session created by the Node. Id: e8dc96f2c6f5bbeff1c18ab8052bd92a, Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.EqBPgx}, goog:chromeOptions: {debuggerAddress: localhost:37041}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: http://localhost:37041, se:cdpVersion: 102.0.5005.61, se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.6:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+[35mselenium-hub    |[0m 11:52:29.395 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:29.395 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:29.396 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:29.396 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:29.396 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "chrome" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:29.397 WARN [W3CCapabilityKeysValidator.validateCapability] - Support for Legacy Capabilities is deprecated; You are sending "networkConnectionEnabled" which is an invalid capability. Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+[35mselenium-hub    |[0m 11:52:29.398 WARN [GridModel.setSession] - Grid model and reality have diverged. Slot is not reserved. SlotId{nodeId=4a29d457-1762-411f-a382-19c4db32b4c9, id=6ed96ffe-5420-4006-9ddd-3b9055a37dbf}
+[35mselenium-hub    |[0m 11:52:29.401 INFO [LocalDistributor.newSession] - Session created by the Distributor. Id: e8dc96f2c6f5bbeff1c18ab8052bd92a 
+[35mselenium-hub    |[0m  Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.EqBPgx}, goog:chromeOptions: {debuggerAddress: localhost:37041}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: {}, se:cdp: ws://172.22.0.6:4444/sessio..., se:cdpVersion: 102.0.5005.61, se:vnc: ws://172.22.0.6:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.22.0.6:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+[34mchrome_4        |[0m 11:52:30.474 INFO [SessionSlot.stop] - Stopping session e8dc96f2c6f5bbeff1c18ab8052bd92a
+[35mselenium-hub    |[0m 11:52:30.484 INFO [GridModel.release] - Releasing slot for session id e8dc96f2c6f5bbeff1c18ab8052bd92a
+[35mselenium-hub    |[0m 11:52:30.485 INFO [LocalSessionMap.lambda$new$0] - Deleted session from local Session Map, Id: e8dc96f2c6f5bbeff1c18ab8052bd92a
+[32;1mchrome_2        |[0m Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+[33;1mchrome_3        |[0m Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+[36mchrome_1        |[0m Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+[34mchrome_4        |[0m Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+[33medge_1          |[0m Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+[36;1mchrome_5        |[0m Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+[32mfirefox_1       |[0m Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+[33;1mchrome_3        |[0m 2022-06-03 11:52:31,942 WARN received SIGTERM indicating exit request
+[33;1mchrome_3        |[0m 2022-06-03 11:52:31,943 INFO waiting for xvfb, vnc, novnc, selenium-node to die
+[36mchrome_1        |[0m 2022-06-03 11:52:32,010 WARN received SIGTERM indicating exit request
+[36mchrome_1        |[0m 2022-06-03 11:52:32,011 INFO waiting for xvfb, vnc, novnc, selenium-node to die
+[36;1mchrome_5        |[0m 2022-06-03 11:52:32,203 WARN received SIGTERM indicating exit request
+[36;1mchrome_5        |[0m 2022-06-03 11:52:32,204 INFO waiting for xvfb, vnc, novnc, selenium-node to die
+[33;1mchrome_3        |[0m 2022-06-03 11:52:32,272 INFO stopped: selenium-node (terminated by SIGTERM)
+[36mchrome_1        |[0m 2022-06-03 11:52:32,342 INFO stopped: selenium-node (terminated by SIGTERM)
+[33medge_1          |[0m 2022-06-03 11:52:32,377 WARN received SIGTERM indicating exit request
+[33medge_1          |[0m 2022-06-03 11:52:32,379 INFO waiting for xvfb, vnc, novnc, selenium-node to die
+[34mchrome_4        |[0m 2022-06-03 11:52:32,479 WARN received SIGTERM indicating exit request
+[34mchrome_4        |[0m 2022-06-03 11:52:32,479 INFO waiting for xvfb, vnc, novnc, selenium-node to die
+[36;1mchrome_5        |[0m 2022-06-03 11:52:32,536 INFO stopped: selenium-node (terminated by SIGTERM)
+[32mfirefox_1       |[0m 2022-06-03 11:52:32,630 WARN received SIGTERM indicating exit request
+[32mfirefox_1       |[0m 2022-06-03 11:52:32,631 INFO waiting for xvfb, vnc, novnc, selenium-node to die
+[32;1mchrome_2        |[0m 2022-06-03 11:52:32,673 WARN received SIGTERM indicating exit request
+[32;1mchrome_2        |[0m 2022-06-03 11:52:32,673 INFO waiting for xvfb, vnc, novnc, selenium-node to die
+[33medge_1          |[0m 2022-06-03 11:52:32,719 INFO stopped: selenium-node (terminated by SIGTERM)
+[34mchrome_4        |[0m 2022-06-03 11:52:32,809 INFO stopped: selenium-node (terminated by SIGTERM)
+[32mfirefox_1       |[0m 2022-06-03 11:52:32,959 INFO stopped: selenium-node (terminated by SIGTERM)
+[32;1mchrome_2        |[0m 2022-06-03 11:52:33,005 INFO stopped: selenium-node (terminated by SIGTERM)
+[33;1mchrome_3        |[0m 2022-06-03 11:52:33,274 INFO stopped: novnc (terminated by SIGTERM)
+[36mchrome_1        |[0m 2022-06-03 11:52:33,343 INFO stopped: novnc (terminated by SIGTERM)
+[36;1mchrome_5        |[0m 2022-06-03 11:52:33,538 INFO stopped: novnc (terminated by SIGTERM)
+[33medge_1          |[0m 2022-06-03 11:52:33,721 INFO stopped: novnc (terminated by SIGTERM)
+[34mchrome_4        |[0m 2022-06-03 11:52:33,810 INFO stopped: novnc (terminated by SIGTERM)
+[32mfirefox_1       |[0m 2022-06-03 11:52:33,961 INFO stopped: novnc (terminated by SIGTERM)
+[32;1mchrome_2        |[0m 2022-06-03 11:52:34,007 INFO stopped: novnc (terminated by SIGTERM)
+[33;1mchrome_3        |[0m 2022-06-03 11:52:34,276 INFO stopped: vnc (terminated by SIGTERM)
+[36mchrome_1        |[0m 2022-06-03 11:52:34,345 INFO stopped: vnc (terminated by SIGTERM)
+[36;1mchrome_5        |[0m 2022-06-03 11:52:34,540 INFO stopped: vnc (terminated by SIGTERM)
+[33medge_1          |[0m 2022-06-03 11:52:34,723 INFO stopped: vnc (terminated by SIGTERM)
+[34mchrome_4        |[0m 2022-06-03 11:52:34,812 INFO stopped: vnc (terminated by SIGTERM)
+[32mfirefox_1       |[0m 2022-06-03 11:52:34,963 INFO stopped: vnc (terminated by SIGTERM)
+[32;1mchrome_2        |[0m 2022-06-03 11:52:35,009 INFO stopped: vnc (terminated by SIGTERM)
+[33;1mchrome_3        |[0m 2022-06-03 11:52:35,277 INFO stopped: xvfb (terminated by SIGTERM)
+[33;1mchrome_3        |[0m Shutdown complete
+[36mchrome_1        |[0m 2022-06-03 11:52:35,347 INFO stopped: xvfb (terminated by SIGTERM)
+[36mchrome_1        |[0m Shutdown complete
+[36;1mchrome_5        |[0m 2022-06-03 11:52:35,541 INFO stopped: xvfb (terminated by SIGTERM)
+[36;1mchrome_5        |[0m Shutdown complete
+[33medge_1          |[0m 2022-06-03 11:52:35,724 INFO stopped: xvfb (terminated by SIGTERM)
+[33medge_1          |[0m Shutdown complete
+[34mchrome_4        |[0m 2022-06-03 11:52:35,813 INFO stopped: xvfb (terminated by SIGTERM)
+[34mchrome_4        |[0m Shutdown complete
+[32mfirefox_1       |[0m 2022-06-03 11:52:35,965 INFO stopped: xvfb (terminated by SIGTERM)
+[32mfirefox_1       |[0m Shutdown complete
+[32;1mchrome_2        |[0m 2022-06-03 11:52:36,010 INFO stopped: xvfb (terminated by SIGTERM)
+[32;1mchrome_2        |[0m Shutdown complete
+[33;1mpracticedocker_chrome_3 exited with code 143
+[0m[36mpracticedocker_chrome_1 exited with code 143
+[0m[36;1mpracticedocker_chrome_5 exited with code 143
+[0m[33mpracticedocker_edge_1 exited with code 143
+[0m[34mpracticedocker_chrome_4 exited with code 143
+[0m[32mpracticedocker_firefox_1 exited with code 143
+[0m[32;1mpracticedocker_chrome_2 exited with code 143
+[0mGracefully stopping... (press Ctrl+C again to force)

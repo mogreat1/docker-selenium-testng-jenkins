@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes">
+    <test name="adf">
+        <classes>
+            <class name="tests.ChromerStandAloneTest"/>
+            <class name="tests.ChromerStandAlone2Test"/>
+            <class name="tests.FirefoxStandAloneTest"/>
+            <class name="tests.FirefoxStandAlone2Test"/>
+            <class name="tests.FirefoxStandAlone3Test"/>
+        </classes>
+    </test>
+</suite>
